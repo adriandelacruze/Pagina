@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Gastronómico</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Mundo Gastronómico</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index pag.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="personajes.html">Chefs</a></li>
+            <li><a href="comidas.html">Platos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="grid-lateral">
+    <aside>
+        <h2>Categorías</h2>
+        <br>
+        <ul>
+            <li>Cocina Italiana</li>
+            <li>Cocina Asiática</li>
+            <li>Repostería</li>
+        </ul>
+    </aside>
+
+    <section class="contenido">
+        <div class="seccion-bloque">
+            <h2>El Arte de Comer</h2>
+            <p>Explora las recetas, los ingredientes y los personajes que definen la cocina global.</p>
+            <img src="img/portada.jpg" alt="Mesa con comida">
+        </div>
+
+        <div class="seccion-bloque">
+            <h2>¡Bienvenido!</h2>
+            <p>Escribe tu nombre para recibir un saludo personalizado.</p>
+
+            <div class="caja-js">
+                <h3>👤 Saludo personalizado</h3>
+                <input type="text" id="inputNombre" placeholder="Tu nombre">
+                <button onclick="saludar()">Saludar</button>
+                <p id="resultado-saludo" class="resultado"></p>
+            </div>
+
+            <div class="caja-js">
+                <h3>🎨 Cambiar fondo</h3>
+                <p>Prueba a cambiar el color de fondo de la página.</p>
+                <button id="btnFondo" onclick="cambiarFondo()">Cambiar fondo</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Historia de la Gastronomía</p>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

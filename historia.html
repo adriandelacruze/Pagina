@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundo Gastronómico</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Historia de la Cocina</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index pag.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="personajes.html">Chefs</a></li>
+            <li><a href="comidas.html">Platos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="seccion-bloque2">
+        <h2>Orígenes del Fuego</h2>
+        <p>La cocina comenzó cuando el ser humano aprendió a dominar el fuego, transformando ingredientes crudos en alimentos cocinados.</p>
+        <img src="img/fuego.jpg" alt="Cocina primitiva">
+    </section>
+
+    <section class="flex-historia">
+        <article class="tarjeta">
+            <h3>Edad Media</h3>
+            <p>Uso masivo de especias para conservar carnes y pescados en Europa.</p>
+        </article>
+        <article class="tarjeta">
+            <h3>Cocina Moderna</h3>
+            <p>Nace la "Haute Cuisine" en Francia, priorizando la estética y la técnica.</p>
+        </article>
+    </section>
+
+    <section class="seccion-bloque">
+        <h2>Etapas de la Historia Culinaria</h2>
+        <p>Pulsa el botón para ver las grandes etapas recorridas con un bucle <strong>for</strong>.</p>
+        <div class="caja-js">
+            <h3>🔁 Bucle for — Etapas de la cocina</h3>
+            <button onclick="mostrarSiglos()">Mostrar etapas</button>
+            <pre id="resultado-bucle" class="resultado"></pre>
+        </div>
+    </section>
+
+    <section class="seccion-bloque">
+        <h2>Décadas de la Cocina Moderna</h2>
+        <p>Generamos las décadas desde 1900 hasta hoy usando un bucle <strong>while</strong>.</p>
+        <div class="caja-js">
+            <h3>🔄 Bucle while — Décadas desde 1900</h3>
+            <button onclick="contarAnios()">Mostrar décadas</button>
+            <p id="resultado-while" class="resultado"></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Historia de la Gastronomía</p>
+</footer>
+
+<script src="js/historia.js"></script>
+</body>
+</html>

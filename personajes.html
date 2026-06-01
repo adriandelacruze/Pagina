@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundo Gastronómico</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Chefs Históricos</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index pag.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="personajes.html">Chefs</a></li>
+            <li><a href="comidas.html">Platos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="flex-personajes">
+        <article class="tarjeta" style="width: 280px;">
+            <img src="img/escoffier.jpg" alt="Escoffier">
+            <h3>Auguste Escoffier</h3>
+            <p>El creador de la cocina profesional moderna y el sistema de brigadas.</p>
+        </article>
+
+        <article class="tarjeta" style="width: 280px;">
+            <img src="img/adria.jpg" alt="Ferran Adria">
+            <h3>Ferran Adrià</h3>
+            <p>Revolucionó la gastronomía mundial con la cocina molecular.</p>
+        </article>
+    </section>
+
+    <section class="seccion-bloque" style="max-width:1200px; margin:0 auto;">
+        <h2>Gestión de Chefs</h2>
+        <p>Practica con el array de chefs usando los métodos <strong>push</strong>, <strong>pop</strong>,
+        <strong>indexOf</strong> y <strong>splice</strong>.</p>
+
+        <div class="caja-js">
+            <h3>📋 Lista actual de chefs</h3>
+            <pre id="resultado-array" class="resultado"></pre>
+        </div>
+
+        <div class="caja-js">
+            <h3>➕ Añadir chef</h3>
+            <input type="text" id="inputChef" placeholder="Nombre del chef">
+            <button onclick="añadirChef()">Añadir</button>
+        </div>
+
+        <div class="caja-js">
+            <h3>➖ Eliminar el último chef</h3>
+            <button onclick="eliminarUltimo()">Eliminar último</button>
+        </div>
+
+        <div class="caja-js">
+            <h3>🔍 Buscar y eliminar chef</h3>
+            <input type="text" id="inputBuscar" placeholder="Nombre exacto">
+            <button onclick="buscarYEliminar()">Buscar y eliminar</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Historia de la Gastronomía</p>
+</footer>
+
+<script src="js/personajes.js"></script>
+</body>
+</html>
